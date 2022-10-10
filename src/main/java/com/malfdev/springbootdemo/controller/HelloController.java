@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * @controller 注解表示这个类是一个控制器类
- * @RestController 表示整个类是是控制器类，并为类中的所有方法都加上@ResponseBody
- */
+    /**
+     * @controller 注解表示这个类是一个控制器类
+     * @RestController 表示整个类是是控制器类，并为类中的所有方法都加上@ResponseBody
+     */
 @Controller
 public class HelloController {
     /**
@@ -19,7 +19,7 @@ public class HelloController {
     @RequestMapping(value = "/hello")
     public String handle1(){
         System.out.println("到达controller");
-        return "/success.html";
+        return "/emp.html";
     }
 
     /**

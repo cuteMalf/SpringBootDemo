@@ -1,14 +1,12 @@
-package com.malfdev.springbootdemo.mapper;
+package com.malfdev.springbootdemo.service;
 
 import com.malfdev.springbootdemo.bean.Employee;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
-@Mapper
-public interface EmployeeMapper {
+public interface EmployeeService {
     /**
-     * 定义增删改查的方法
+     * 业务模型
      */
     Employee getEmployeeByID(Integer id);
     List<Employee> getAllEmployees();
