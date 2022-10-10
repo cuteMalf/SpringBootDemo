@@ -5,6 +5,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+/**
+ * @DS("test ") 注解用于动态切换数据源
+ */
 @Mapper
 public interface EmployeeMapper {
     /**

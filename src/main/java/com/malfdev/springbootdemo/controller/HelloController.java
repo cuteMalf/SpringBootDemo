@@ -60,8 +60,21 @@ public class HelloController {
 
     @ResponseBody
     @PostMapping(value = "/getJson")
-    public String handle6(@RequestBody String str){
+    public String handle6(String str){
         System.out.println("请求handle5方法"+str);
         return "请求handle5方法";
+    }
+
+        /**
+         * 获取路径
+         * @param pathVariable1
+         * @return
+         */
+    @ResponseBody
+    @GetMapping(value = "/requestPathVariable/{pathVariable1}/bbb")
+    public String handle7(@PathVariable String pathVariable1){
+        System.out.println("pathVariable = " + pathVariable1);
+        return "接受url中的变量";
+
     }
 }

@@ -28,8 +28,7 @@
     </insert>
 
     <update id="updateEmployee">
-        update tbl_employee set last_name=#{lastName} , gender=#{gender} ,email=#{email}
-        where id = #{id}
+        update tbl_employee set last_name=#{lastName} , gender=#{gender} ,email=#{email} where id = #{id}
 
     </update>
 </mapper>
